@@ -13,7 +13,7 @@ Erstellt mit Delphi XE8 Starter. Bitte beachten Sie unbedingt den Artikel in **[
 **Derzeit gibt es [Delphi 10.1 Berlin Starter](https://www.embarcadero.com/de/products/delphi/starter/promotional-download) kostenlos!** 
 
 Ausführbare Datei (.EXE, Win32) im Verzeichnis 
-**[/bin](https://github.com/heise/GRBLize/tree/master/bin)**, benötigt 
+**[/bin](https://github.com/heise/GRBL-Placer/tree/master/Win32/Release)**, benötigt 
 "default.job", ggf. die Beispiel-Plot-Dateien und gegebenenfalls ftd2xx.dll, 
 letzteres aber nur, falls nicht ohnehin schon im System vom FTDI-Treiber-
 Download installiert.
