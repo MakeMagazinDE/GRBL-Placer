@@ -8,7 +8,7 @@ Maker Media GmbH und c't, Heise Zeitschriften Verlag
 
 ### Steuerung für MaXYposi als Bestückungsautomat
 
-Erstellt mit Delphi XE8 Starter. Bitte beachten Sie unbedingt den Artikel in **[c't Hacks 4/2014](http://shop.heise.de/katalog/ct-hacks-4-2014)**. 
+Erstellt mit Delphi XE8 Starter. Bitte beachten Sie unbedingt den Artikel in **[Make Ausgabe 5/2018](http://shop.heise.de/katalog/make-5-2018)**. 
 
 **Derzeit gibt es [Delphi 10.1 Berlin Starter](https://www.embarcadero.com/de/products/delphi/starter/promotional-download) kostenlos!** 
 
