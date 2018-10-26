@@ -14,7 +14,7 @@ Erstellt mit Delphi XE8 Starter. Bitte beachten Sie unbedingt den Artikel in **[
 
 Ausführbare Datei (.EXE, Win32) im Verzeichnis 
 **[/Win32/Release](https://github.com/heise/GRBL-Placer/tree/master/Win32/Release)**, benötigt 
-"default.job", ggf. die Beispiel-Plot-Dateien und gegebenenfalls ftd2xx.dll, 
+"default.job", ggf. die Beispiel-Positionsdaten und gegebenenfalls ftd2xx.dll, 
 letzteres aber nur, falls nicht ohnehin schon im System vom FTDI-Treiber-
 Download installiert.
 
