@@ -20,5 +20,5 @@ Download installiert.
 
 Auf der rechten Spalte der Github-Seite finden Sie den Button "Download ZIP". 
 Dies lädt das komplette Projekt herunter einschl. Sourcen. Nach Entpacken findet 
-sich das Windows-Executable (32 Bit) im Unterverzeichnis /bin.
+sich das Windows-Executable (32 Bit) im Unterverzeichnis Win32/Release.
 
