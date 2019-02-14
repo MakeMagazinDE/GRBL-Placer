@@ -31,7 +31,6 @@ type
     procedure FormCreate(Sender: TObject);
     procedure OverlayColorClick(Sender: TObject);
     procedure BtnMoveCamFeederClick(Sender: TObject);
-    procedure FormShow(Sender: TObject);
     procedure BtnMoveCamPartClick(Sender: TObject);
     procedure VideoBoxMouseDown(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
@@ -40,6 +39,7 @@ type
     procedure VideoBoxMouseUp(Sender: TObject; Button: TMouseButton;
       Shift: TShiftState; X, Y: Integer);
     procedure BtnCamAtFeederPartClick(Sender: TObject);
+    procedure FormShow(Sender: TObject);
 
   private
     { Private-Deklarationen }
@@ -117,6 +117,33 @@ begin
   SetSingleFeederPosition(SelectedFeeder, true)
 end;
 
+procedure TForm3.FormCreate(Sender: TObject);
+var
+  grbl_ini:TRegistry;
+
+begin
+  CamMouseDown:= false;
+  grbl_ini:= TRegistry.Create;
+  try
+    grbl_ini.RootKey := HKEY_CURRENT_USER;
+    grbl_ini.OpenKey('SOFTWARE\Make\GRBLplacer',true);
+    if grbl_ini.ValueExists('CamFormTop') then
+      Top:= grbl_ini.ReadInteger('CamFormTop');
+    if grbl_ini.ValueExists('CamFormLeft') then
+      Left:= grbl_ini.ReadInteger('CamFormLeft');
+    if grbl_ini.ValueExists('CamFormWidth') then
+      Width:= grbl_ini.ReadInteger('CamFormWidth');
+    if grbl_ini.ValueExists('CamFormHeight') then
+      Height:= grbl_ini.ReadInteger('CamFormHeight');
+  finally
+    grbl_ini.Free;
+  end;
+  BtnMoveCamPart.Caption:= GetPartNameFromRow + ' Center';
+  BtnCamAtPart.Caption:= 'Set PCB Offs to ' + GetPartNameFromRow;
+  //SetWindowPos(Handle, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NoMove or SWP_NoSize);
+  FormShow(Sender);
+end;
+
 procedure TForm3.FormShow(Sender: TObject);
 begin
   fActivated:= false;
@@ -153,32 +180,7 @@ begin
     fVideoImage.VideoStart(DeviceList[0]);
     Label1.Caption:='';
   end;
-end;
 
-procedure TForm3.FormCreate(Sender: TObject);
-var
-  grbl_ini:TRegistry;
-
-begin
-  CamMouseDown:= false;
-  grbl_ini:= TRegistry.Create;
-  try
-    grbl_ini.RootKey := HKEY_CURRENT_USER;
-    grbl_ini.OpenKey('SOFTWARE\Make\GRBLplacer',true);
-    if grbl_ini.ValueExists('CamFormTop') then
-      Top:= grbl_ini.ReadInteger('CamFormTop');
-    if grbl_ini.ValueExists('CamFormLeft') then
-      Left:= grbl_ini.ReadInteger('CamFormLeft');
-    if grbl_ini.ValueExists('CamFormWidth') then
-      Width:= grbl_ini.ReadInteger('CamFormWidth');
-    if grbl_ini.ValueExists('CamFormHeight') then
-      Height:= grbl_ini.ReadInteger('CamFormHeight');
-  finally
-    grbl_ini.Free;
-  end;
-  BtnMoveCamPart.Caption:= GetPartNameFromRow + ' Center';
-  BtnCamAtPart.Caption:= 'Set PCB Offs to ' + GetPartNameFromRow;
-  Show;
 end;
 
 procedure TForm3.FormClose(Sender: TObject; var Action: TCloseAction);

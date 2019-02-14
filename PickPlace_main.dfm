@@ -337,13 +337,10 @@ object Form1: TForm1
     ExplicitTop = 595
   end
   object StringGrid1: TStringGrid
-    Left = 23
+    Left = 24
     Top = 331
     Width = 577
     Height = 320
-    Hint = 
-      'CC#, RPN# or NRPN#: $XX or $XXXX = hex value, otherwise decimal.' +
-      ' Increment Send Channel by 1 or 2 with CC+1, CC+2.'
     TabStop = False
     Anchors = [akLeft, akTop, akBottom]
     BevelInner = bvNone
@@ -580,9 +577,6 @@ object Form1: TForm1
     Top = 53
     Width = 650
     Height = 212
-    Hint = 
-      'CC#, RPN# or NRPN#: $XX or $XXXX = hex value, otherwise decimal.' +
-      ' Increment Send Channel by 1 or 2 with CC+1, CC+2.'
     TabStop = False
     BevelInner = bvNone
     BevelKind = bkFlat

@@ -17,7 +17,6 @@ object Form3: TForm3
   Font.Style = []
   OldCreateOrder = False
   Position = poDesigned
-  Visible = True
   OnClose = FormClose
   OnCreate = FormCreate
   OnShow = FormShow
