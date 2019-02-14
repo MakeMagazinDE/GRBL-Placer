@@ -20,8 +20,9 @@ uses
 
 begin
   Application.Initialize;
-  Application.MainFormOnTaskbar := True;
+  //Application.MainFormOnTaskbar := True;  // Führt dazu, dass CamView immer im Vordergrund ist!
   Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TForm3, Form3);
   Application.CreateForm(Tdeviceselectbox, deviceselectbox);
   Application.Run;
 end.

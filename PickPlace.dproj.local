@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.797,D:\Dropbox\GRBL_PickPlace\PickPlace.dproj=D:\Dokumente\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.457,=E:\Dropbox\GRBL_PickPlace\cam_view.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.949,=E:\Dropbox\GRBL_PickPlace\VFrames.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.623,=E:\Dropbox\GRBL_PickPlace\UGDIPlus.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.154,D:\Dropbox\GRBL_PickPlace\PickPlace_main.pas=D:\Dokumente\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.205,=E:\Dropbox\GRBL_PickPlace\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.621,=D:\Dokumente\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.154,D:\Dropbox\GRBL_PickPlace\PickPlace_main.dfm=D:\Dokumente\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.935,=E:\Dropbox\GRBL_PickPlace\VSample.pas</Transaction>
+  </Transactions>
+</BorlandProject>
