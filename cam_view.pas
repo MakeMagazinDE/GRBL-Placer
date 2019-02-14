@@ -140,8 +140,6 @@ begin
   end;
   BtnMoveCamPart.Caption:= GetPartNameFromRow + ' Center';
   BtnCamAtPart.Caption:= 'Set PCB Offs to ' + GetPartNameFromRow;
-  //SetWindowPos(Handle, HWND_NOTOPMOST, 0, 0, 0, 0, SWP_NoMove or SWP_NoSize);
-  FormShow(Sender);
 end;
 
 procedure TForm3.FormShow(Sender: TObject);
