@@ -78,7 +78,6 @@ type
     BtnHomeCycle: TSpeedButton;
     Bevel1: TBevel;
     BtnSetOffsets: TBitBtn;
-    Label4: TLabel;
     Label3: TLabel;
     Label5: TLabel;
     BtnCamView: TBitBtn;
@@ -157,6 +156,7 @@ type
     SetFeederOffsetNozzleatfirstPart2: TMenuItem;
     SetFeederOffsetCamatfirstPart2: TMenuItem;
     Saveall1: TMenuItem;
+    Bevel2: TBevel;
     procedure BtnOpenPositionsClick(Sender: TObject);
     procedure StringGrid1TopLeftChanged(Sender: TObject);
     procedure StringGrid1SelectCell(Sender: TObject; ACol, ARow: Integer;
@@ -778,6 +778,7 @@ begin
     ComboBoxFeeder.ItemIndex:= n;
     StringGrid2.Cells[1, n]:= my_partvalue;
     StringGrid2.Cells[2, n]:= my_package;
+    StringGrid2.Cells[9, n]:= 'ON';
 
     StringGrid1.Cells[7, SelectedRow]:= StringGrid2.Cells[0, n]; // Feeder/Tape #
     ApplyFeederstoMatchingPartsClick(Sender);
@@ -898,7 +899,8 @@ begin
       if (ACol = 9) and (ARow > 1) then begin
         balken_rect := Rect;
         Pen.Color := cl3Dlight;
-        InflateRect(balken_rect, -2, -2);
+        InflateRect(balken_rect, -1, -1);
+        balken_rect.Left:= balken_rect.Left - 4;
         Brush.Color := clgray;
         FrameRect(balken_rect);
         Brush.Color := cl3Dlight;
@@ -909,7 +911,7 @@ begin
         Font.Style := [fsBold];
         FillRect(balken_rect);
         aStr:= Cells[ACol, ARow];
-        balken_rect.Top := balken_rect.Top + 1; // adjust top to center vertical
+        balken_rect.Top := balken_rect.Top + 0; // adjust top to center vertical
         DrawText(Canvas.Handle, PChar(aStr), Length(aStr), balken_rect, DT_CENTER);
       end;
     end;
@@ -1647,7 +1649,7 @@ begin
         Memo1.Lines.Add('Strip empty, change #' + IntToStr(tape_feeder));
         grbl_moveZ(-2, true);
         grbl_moveXY(place_x + pcb_zero_x, place_y + pcb_zero_y, false);
-        buttonSelected:= messagedlg('Tape #' + IntToStr(tape_feeder)
+        buttonSelected:= messagedlg('Feeder/Tape #' + IntToStr(tape_feeder)
          + ' is empty - please change and click OK when done', mtError, mbOKCancel, 0);
         count:= 0;
         StringGrid2.Cells[7, tape_feeder+1]:= '0';

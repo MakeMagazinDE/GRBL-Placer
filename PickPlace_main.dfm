@@ -2,8 +2,8 @@ object Form1: TForm1
   Left = 229
   Top = 120
   Caption = 'GRBL Placer'
-  ClientHeight = 681
-  ClientWidth = 1164
+  ClientHeight = 591
+  ClientWidth = 1154
   Color = clBtnFace
   Constraints.MaxWidth = 1180
   Constraints.MinHeight = 600
@@ -21,54 +21,54 @@ object Form1: TForm1
   OnClose = FormClose
   OnCreate = FormCreate
   DesignSize = (
-    1164
-    681)
+    1154
+    591)
   PixelsPerInch = 96
   TextHeight = 13
   object Bevel3: TBevel
     Left = 8
-    Top = 292
-    Width = 1141
-    Height = 364
+    Top = 279
+    Width = 1137
+    Height = 286
     Anchors = [akLeft, akTop, akBottom]
     Shape = bsFrame
     Style = bsRaised
   end
   object Bevel1: TBevel
     Left = 8
-    Top = 8
-    Width = 1141
-    Height = 269
+    Top = 2
+    Width = 459
+    Height = 271
     Shape = bsFrame
     Style = bsRaised
   end
   object Label1: TLabel
-    Left = 548
-    Top = 34
+    Left = 481
+    Top = 16
     Width = 91
-    Height = 13
+    Height = 15
     Caption = 'Tape/Feeder Table'
   end
   object Label2: TLabel
-    Left = 24
-    Top = 312
+    Left = 20
+    Top = 296
     Width = 124
-    Height = 13
+    Height = 15
     Caption = 'Component Position Table'
   end
   object Bevel8: TBevel
     Left = 622
-    Top = 594
+    Top = 497
     Width = 519
-    Height = 57
+    Height = 59
     Anchors = [akLeft, akBottom]
-    ExplicitTop = 607
+    ExplicitTop = 572
   end
   object PosX: TLabel
     Left = 627
-    Top = 616
+    Top = 519
     Width = 106
-    Height = 37
+    Height = 39
     Anchors = [akLeft, akBottom]
     Caption = '000,00'
     Font.Charset = DEFAULT_CHARSET
@@ -77,13 +77,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitTop = 642
+    ExplicitTop = 594
   end
   object PosY: TLabel
     Left = 755
-    Top = 616
+    Top = 519
     Width = 106
-    Height = 37
+    Height = 39
     Anchors = [akLeft, akBottom]
     Caption = '000,00'
     Font.Charset = DEFAULT_CHARSET
@@ -92,13 +92,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitTop = 642
+    ExplicitTop = 594
   end
   object PosZ: TLabel
     Left = 883
-    Top = 619
+    Top = 522
     Width = 106
-    Height = 37
+    Height = 39
     Anchors = [akLeft, akBottom]
     Caption = '000,00'
     Font.Charset = DEFAULT_CHARSET
@@ -107,13 +107,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitTop = 632
+    ExplicitTop = 597
   end
   object MposX: TLabel
     Left = 627
-    Top = 599
+    Top = 502
     Width = 45
-    Height = 16
+    Height = 18
     Anchors = [akLeft, akBottom]
     Caption = '000,00'
     Font.Charset = DEFAULT_CHARSET
@@ -122,13 +122,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitTop = 625
+    ExplicitTop = 577
   end
   object MposY: TLabel
     Left = 755
-    Top = 598
+    Top = 501
     Width = 45
-    Height = 16
+    Height = 18
     Anchors = [akLeft, akBottom]
     Caption = '000,00'
     Font.Charset = DEFAULT_CHARSET
@@ -137,13 +137,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitTop = 624
+    ExplicitTop = 576
   end
   object MposZ: TLabel
     Left = 883
-    Top = 598
+    Top = 501
     Width = 45
-    Height = 16
+    Height = 18
     Anchors = [akLeft, akBottom]
     Caption = '000,00'
     Font.Charset = DEFAULT_CHARSET
@@ -152,13 +152,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitTop = 624
+    ExplicitTop = 576
   end
   object Label28: TLabel
     Left = 1104
-    Top = 600
+    Top = 503
     Width = 27
-    Height = 13
+    Height = 15
     Anchors = [akLeft, akBottom]
     Caption = 'MPos'
     Font.Charset = DEFAULT_CHARSET
@@ -167,13 +167,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
-    ExplicitTop = 613
+    ExplicitTop = 578
   end
   object MposC: TLabel
     Left = 1013
-    Top = 598
+    Top = 501
     Width = 37
-    Height = 16
+    Height = 18
     Anchors = [akLeft, akBottom]
     Caption = '000,0'
     Font.Charset = DEFAULT_CHARSET
@@ -182,13 +182,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitTop = 624
+    ExplicitTop = 576
   end
   object PosC: TLabel
     Left = 1011
-    Top = 616
+    Top = 519
     Width = 87
-    Height = 37
+    Height = 39
     Anchors = [akLeft, akBottom]
     Caption = '000,0'
     Font.Charset = DEFAULT_CHARSET
@@ -197,13 +197,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = [fsBold]
     ParentFont = False
-    ExplicitTop = 642
+    ExplicitTop = 594
   end
   object Label39: TLabel
     Left = 713
-    Top = 600
+    Top = 503
     Width = 16
-    Height = 13
+    Height = 15
     Anchors = [akLeft, akBottom]
     Caption = 'mm'
     Font.Charset = DEFAULT_CHARSET
@@ -212,13 +212,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
-    ExplicitTop = 626
+    ExplicitTop = 578
   end
   object Label40: TLabel
     Left = 842
-    Top = 600
+    Top = 503
     Width = 16
-    Height = 13
+    Height = 15
     Anchors = [akLeft, akBottom]
     Caption = 'mm'
     Font.Charset = DEFAULT_CHARSET
@@ -227,13 +227,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
-    ExplicitTop = 626
+    ExplicitTop = 578
   end
   object Label41: TLabel
     Left = 970
-    Top = 600
+    Top = 503
     Width = 16
-    Height = 13
+    Height = 15
     Anchors = [akLeft, akBottom]
     Caption = 'mm'
     Font.Charset = DEFAULT_CHARSET
@@ -242,13 +242,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
-    ExplicitTop = 626
+    ExplicitTop = 578
   end
   object Label42: TLabel
     Left = 1074
-    Top = 600
+    Top = 503
     Width = 18
-    Height = 13
+    Height = 15
     Anchors = [akLeft, akBottom]
     Caption = 'deg'
     Font.Charset = DEFAULT_CHARSET
@@ -257,13 +257,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
-    ExplicitTop = 626
+    ExplicitTop = 578
   end
   object BtnRunJob: TSpeedButton
     Left = 1011
-    Top = 500
+    Top = 380
     Width = 122
-    Height = 24
+    Height = 26
     Hint = 'Run job with all active Tapes/Feeders'
     Caption = 'Run Job'
     Font.Charset = DEFAULT_CHARSET
@@ -276,9 +276,9 @@ object Form1: TForm1
   end
   object BtnHomeCycle: TSpeedButton
     Left = 1011
-    Top = 305
+    Top = 289
     Width = 122
-    Height = 24
+    Height = 26
     Hint = 'Perform a homing cycle and set Work Zero'
     Caption = 'Home Cycle'
     Font.Charset = DEFAULT_CHARSET
@@ -289,28 +289,18 @@ object Form1: TForm1
     ParentFont = False
     OnClick = BtnHomeCycleClick
   end
-  object Label4: TLabel
-    Left = 1009
-    Top = 370
-    Width = 121
-    Height = 65
-    Caption = 
-      'Jog  nozzle manually to selected part on PCB, lower Z to touch s' +
-      'urface and click here to set PCB Offsets X,Y,Z:'
-    WordWrap = True
-  end
   object Label3: TLabel
-    Left = 24
-    Top = 34
+    Left = 20
+    Top = 16
     Width = 46
-    Height = 13
+    Height = 15
     Caption = 'Job Table'
   end
   object Label5: TLabel
     Left = 1104
-    Top = 627
+    Top = 530
     Width = 29
-    Height = 13
+    Height = 15
     Anchors = [akLeft, akBottom]
     Caption = 'WPos'
     Font.Charset = DEFAULT_CHARSET
@@ -319,13 +309,13 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     ParentFont = False
-    ExplicitTop = 640
+    ExplicitTop = 605
   end
   object Label6: TLabel
     Left = 627
-    Top = 569
+    Top = 471
     Width = 69
-    Height = 16
+    Height = 18
     Anchors = [akLeft, akBottom]
     Caption = 'GRBL Status'
     Font.Charset = DEFAULT_CHARSET
@@ -334,13 +324,21 @@ object Form1: TForm1
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
-    ExplicitTop = 595
+    ExplicitTop = 546
+  end
+  object Bevel2: TBevel
+    Left = 472
+    Top = 2
+    Width = 673
+    Height = 271
+    Shape = bsFrame
+    Style = bsRaised
   end
   object StringGrid1: TStringGrid
-    Left = 24
-    Top = 331
+    Left = 20
+    Top = 315
     Width = 577
-    Height = 320
+    Height = 243
     TabStop = False
     Anchors = [akLeft, akTop, akBottom]
     BevelInner = bvNone
@@ -348,7 +346,7 @@ object Form1: TForm1
     BevelOuter = bvNone
     ColCount = 8
     DefaultColWidth = 70
-    DefaultRowHeight = 20
+    DefaultRowHeight = 16
     DoubleBuffered = True
     DrawingStyle = gdsClassic
     FixedColor = cl3DLight
@@ -356,7 +354,7 @@ object Form1: TForm1
     RowCount = 129
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goDrawFocusSelected, goEditing, goTabs, goThumbTracking]
@@ -381,142 +379,12 @@ object Form1: TForm1
       68
       53
       69)
-    RowHeights = (
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20)
   end
   object BtnOpenFile: TBitBtn
-    Left = 243
-    Top = 305
+    Left = 239
+    Top = 289
     Width = 115
-    Height = 20
+    Height = 22
     Hint = 'Load .CSV file to Component Positions table'
     Caption = 'Open Positions File'
     Font.Charset = ANSI_CHARSET
@@ -530,9 +398,9 @@ object Form1: TForm1
   end
   object ComboBoxFeeder: TComboBox
     Left = 408
-    Top = 462
+    Top = 446
     Width = 67
-    Height = 22
+    Height = 20
     AutoComplete = False
     AutoDropDown = True
     AutoCloseUp = True
@@ -543,9 +411,9 @@ object Form1: TForm1
     DropDownCount = 16
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -12
+    Font.Height = -10
     Font.Name = 'Tahoma'
-    Font.Style = []
+    Font.Style = [fsBold]
     ParentFont = False
     TabOrder = 2
     TabStop = False
@@ -555,10 +423,10 @@ object Form1: TForm1
       'None')
   end
   object BtnSavePositions: TBitBtn
-    Left = 485
-    Top = 305
+    Left = 481
+    Top = 289
     Width = 115
-    Height = 20
+    Height = 22
     Hint = 'Save Component Positions table as .CSV file'
     Caption = 'Save Positions File'
     Font.Charset = ANSI_CHARSET
@@ -574,23 +442,23 @@ object Form1: TForm1
   end
   object StringGrid2: TStringGrid
     Left = 481
-    Top = 53
+    Top = 37
     Width = 650
-    Height = 212
+    Height = 227
     TabStop = False
     BevelInner = bvNone
     BevelKind = bkFlat
     BevelOuter = bvNone
     ColCount = 11
     DefaultColWidth = 70
-    DefaultRowHeight = 20
+    DefaultRowHeight = 16
     DoubleBuffered = True
     DrawingStyle = gdsClassic
     FixedColor = cl3DLight
     RowCount = 129
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goDrawFocusSelected, goRowMoving, goEditing, goTabs, goThumbTracking]
@@ -616,142 +484,12 @@ object Form1: TForm1
       51
       59
       55)
-    RowHeights = (
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20)
   end
   object BtnOpenFeederValues: TBitBtn
     Left = 780
-    Top = 27
+    Top = 11
     Width = 113
-    Height = 20
+    Height = 22
     Hint = 'Load .CSV file to Tape/Feeder table'
     Caption = 'Open Feeder Table'
     Font.Charset = ANSI_CHARSET
@@ -767,9 +505,9 @@ object Form1: TForm1
   end
   object BtnSaveFeederValues: TBitBtn
     Left = 1018
-    Top = 27
+    Top = 11
     Width = 113
-    Height = 20
+    Height = 22
     Hint = 'Save Tape/Feeder table as .FDR file'
     Caption = 'Save Feeder Table'
     Font.Charset = ANSI_CHARSET
@@ -784,10 +522,10 @@ object Form1: TForm1
     OnClick = BtnSaveFeedersClick
   end
   object StringGrid3: TStringGrid
-    Left = 23
-    Top = 53
-    Width = 452
-    Height = 212
+    Left = 19
+    Top = 37
+    Width = 436
+    Height = 227
     Hint = 'Default values for job'
     TabStop = False
     BevelInner = bvNone
@@ -795,14 +533,14 @@ object Form1: TForm1
     BevelOuter = bvNone
     ColCount = 2
     DefaultColWidth = 70
-    DefaultRowHeight = 20
+    DefaultRowHeight = 16
     DoubleBuffered = True
     DrawingStyle = gdsClassic
     FixedColor = cl3DLight
     RowCount = 129
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -13
+    Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
     Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goDrawFocusSelected, goEditing, goTabs, goThumbTracking]
@@ -812,144 +550,14 @@ object Form1: TForm1
     TabOrder = 7
     OnDrawCell = StringGrid3DrawCell
     ColWidths = (
-      193
+      176
       236)
-    RowHeights = (
-      20
-      20
-      20
-      20
-      20
-      19
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20
-      20)
   end
   object BtnSaveJob: TBitBtn
-    Left = 380
-    Top = 27
+    Left = 360
+    Top = 11
     Width = 95
-    Height = 20
+    Height = 22
     Hint = 'Save job table as .JOB file'
     Caption = 'Save Job Defaults'
     Font.Charset = ANSI_CHARSET
@@ -964,10 +572,10 @@ object Form1: TForm1
     OnClick = BtnSaveJobClick
   end
   object BtnOpenJob: TBitBtn
-    Left = 176
-    Top = 27
+    Left = 156
+    Top = 11
     Width = 97
-    Height = 20
+    Height = 22
     Hint = 'Load .CSV file to job table'
     Caption = 'Open Job Defaults'
     Font.Charset = ANSI_CHARSET
@@ -983,9 +591,9 @@ object Form1: TForm1
   end
   object BtnClose: TButton
     Left = 697
-    Top = 305
+    Top = 289
     Width = 54
-    Height = 24
+    Height = 26
     Hint = 'Close FTDI USB Device'
     Caption = 'Close'
     Font.Charset = ANSI_CHARSET
@@ -999,9 +607,9 @@ object Form1: TForm1
   end
   object BtnRescan: TButton
     Left = 623
-    Top = 305
+    Top = 289
     Width = 68
-    Height = 24
+    Height = 26
     Hint = 'Open FTDI USB Device'
     Caption = 'Connect'
     Font.Charset = ANSI_CHARSET
@@ -1015,9 +623,9 @@ object Form1: TForm1
   end
   object DeviceView: TEdit
     Left = 766
-    Top = 306
+    Top = 290
     Width = 223
-    Height = 21
+    Height = 23
     Hint = 'Selected FTDI Device'
     TabStop = False
     AutoSelect = False
@@ -1037,9 +645,9 @@ object Form1: TForm1
   end
   object PanelAlive: TPanel
     Left = 805
-    Top = 567
+    Top = 469
     Width = 50
-    Height = 21
+    Height = 23
     Hint = 'Machine Idle. Click if response stuck to exit receive loop.'
     Anchors = [akLeft, akBottom]
     BevelOuter = bvLowered
@@ -1056,12 +664,13 @@ object Form1: TForm1
     ParentCtl3D = False
     ParentFont = False
     TabOrder = 13
+    ExplicitTop = 544
   end
   object PanelReady: TPanel
     Left = 861
-    Top = 567
+    Top = 469
     Width = 50
-    Height = 21
+    Height = 23
     Hint = 'Machine Idle. Click panel to cancel HOLD state'
     Anchors = [akLeft, akBottom]
     BevelOuter = bvLowered
@@ -1079,12 +688,13 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 14
     OnClick = PanelReadyClick
+    ExplicitTop = 544
   end
   object PanelRun: TPanel
     Left = 917
-    Top = 567
+    Top = 469
     Width = 49
-    Height = 21
+    Height = 23
     Hint = 'Machine is moving. Click panel to cancel HOLD state'
     Anchors = [akLeft, akBottom]
     BevelOuter = bvLowered
@@ -1101,12 +711,13 @@ object Form1: TForm1
     ParentCtl3D = False
     ParentFont = False
     TabOrder = 15
+    ExplicitTop = 544
   end
   object PanelHold: TPanel
     Left = 972
-    Top = 567
+    Top = 469
     Width = 49
-    Height = 21
+    Height = 23
     Hint = 'Feed hold/pause. Click panel to set HOLD state'
     Anchors = [akLeft, akBottom]
     BevelOuter = bvLowered
@@ -1123,12 +734,13 @@ object Form1: TForm1
     ParentCtl3D = False
     ParentFont = False
     TabOrder = 16
+    ExplicitTop = 544
   end
   object PanelAlarm: TPanel
     Left = 1027
-    Top = 567
+    Top = 469
     Width = 50
-    Height = 21
+    Height = 23
     Hint = 'Steps missed or probing failed, run Home Cycle. Click to Unlock'
     Anchors = [akLeft, akBottom]
     BevelOuter = bvLowered
@@ -1146,12 +758,13 @@ object Form1: TForm1
     ParentFont = False
     TabOrder = 17
     OnClick = PanelAlarmClick
+    ExplicitTop = 544
   end
   object PanelBusy: TPanel
     Left = 1083
-    Top = 567
+    Top = 469
     Width = 50
-    Height = 21
+    Height = 23
     Hint = 'Busy/Running'
     Anchors = [akLeft, akBottom]
     BevelOuter = bvLowered
@@ -1168,12 +781,13 @@ object Form1: TForm1
     ParentCtl3D = False
     ParentFont = False
     TabOrder = 18
+    ExplicitTop = 544
   end
   object PanelPinState: TPanel
     Left = 720
-    Top = 567
+    Top = 469
     Width = 77
-    Height = 21
+    Height = 23
     Hint = 'Machine Idle. Click if response stuck to exit receive loop.'
     Anchors = [akLeft, akBottom]
     BevelOuter = bvLowered
@@ -1189,23 +803,25 @@ object Form1: TForm1
     ParentCtl3D = False
     ParentFont = False
     TabOrder = 19
+    ExplicitTop = 544
   end
   object Memo1: TMemo
     Left = 623
-    Top = 348
+    Top = 319
     Width = 366
-    Height = 195
+    Height = 135
     Anchors = [akLeft, akTop, akBottom]
     Lines.Strings = (
       'GRBL Placer 0.1 by -cm')
     ScrollBars = ssVertical
     TabOrder = 20
+    ExplicitHeight = 210
   end
   object BtnEmergStop: TBitBtn
-    Left = 1013
-    Top = 530
+    Left = 1011
+    Top = 425
     Width = 122
-    Height = 39
+    Height = 41
     Hint = 'Emergency Stop - Steps may be lost!'
     Caption = 'STOP'
     Font.Charset = DEFAULT_CHARSET
@@ -1317,11 +933,13 @@ object Form1: TForm1
     OnClick = BtnEmergStopClick
   end
   object BtnSetOffsets: TBitBtn
-    Left = 1009
-    Top = 444
+    Left = 1011
+    Top = 350
     Width = 122
-    Height = 24
-    Hint = 'Set PCB Offsets to match this part on PCB'
+    Height = 26
+    Hint = 
+      'Jog  nozzle manually to selected part on PCB, lower Z to touch s' +
+      'urface and click here to set PCB Offsets X,Y,Z'
     Caption = 'Set PCB Offset'
     Font.Charset = ANSI_CHARSET
     Font.Color = clBlue
@@ -1336,9 +954,9 @@ object Form1: TForm1
   end
   object BtnCamView: TBitBtn
     Left = 1011
-    Top = 335
+    Top = 319
     Width = 122
-    Height = 25
+    Height = 27
     Hint = 
       'Reset all Tape/Feeder pickup locations and part pickup position ' +
       'counts (updated by job run)'
@@ -1356,10 +974,10 @@ object Form1: TForm1
   end
   object BitBtn1: TBitBtn
     Tag = 1
-    Left = 279
-    Top = 27
+    Left = 259
+    Top = 11
     Width = 95
-    Height = 20
+    Height = 22
     Hint = 'Save job table as .JOB file'
     Caption = 'Save Job as...'
     Font.Charset = ANSI_CHARSET
@@ -1372,10 +990,10 @@ object Form1: TForm1
     OnClick = BtnSaveJobAsClick
   end
   object BtnSavePositionsAs: TBitBtn
-    Left = 364
-    Top = 305
+    Left = 360
+    Top = 289
     Width = 115
-    Height = 20
+    Height = 22
     Hint = 'Save Component Positions table as .CSV file'
     Caption = 'Save Positions as...'
     Font.Charset = ANSI_CHARSET
@@ -1389,9 +1007,9 @@ object Form1: TForm1
   end
   object BitBtn2: TBitBtn
     Left = 899
-    Top = 27
+    Top = 11
     Width = 113
-    Height = 20
+    Height = 22
     Hint = 'Save Tape/Feeder table as .FDR file'
     Caption = 'Save Feeders as...'
     Font.Charset = ANSI_CHARSET
@@ -1407,19 +1025,22 @@ object Form1: TForm1
   end
   object StatusBar1: TStatusBar
     Left = 0
-    Top = 662
-    Width = 1164
+    Top = 572
+    Width = 1154
     Height = 19
     Panels = <>
     ParentShowHint = False
     ShowHint = False
     SimplePanel = True
+    ExplicitLeft = -9
+    ExplicitTop = 571
+    ExplicitWidth = 1158
   end
   object BtnResetCounters: TBitBtn
     Left = 661
-    Top = 27
+    Top = 11
     Width = 113
-    Height = 20
+    Height = 22
     Hint = 'Reset all part counters to 0 (all filled up)'
     Caption = 'Reset Part Counters'
     Font.Charset = ANSI_CHARSET
@@ -1437,36 +1058,36 @@ object Form1: TForm1
     Filter = 
       'Component Positions (CSV)|*.csv|Component Positions (Text)|*.txt' +
       '|Job Tabe|*.job|Feeder Table|*.fdr'
-    Left = 533
-    Top = 600
+    Left = 461
+    Top = 488
   end
   object OpenDialog1: TOpenDialog
     Filter = 
       'Component Positions (CSV)|*.csv|Component Positions (Text)|*.txt' +
       '|Job Tabe|*.job|Feeder Table|*.fdr'
-    Left = 469
-    Top = 584
+    Left = 389
+    Top = 480
   end
   object XPManifest1: TXPManifest
     Left = 535
-    Top = 482
+    Top = 466
   end
   object TimerStatus: TTimer
     Enabled = False
     Interval = 50
     OnTimer = TimerStatusElapsed
-    Left = 402
-    Top = 584
+    Left = 346
+    Top = 472
   end
   object TimerBlink: TTimer
     Interval = 350
     OnTimer = TimerBlinkTimer
     Left = 450
-    Top = 743
+    Top = 734
   end
   object PopupMenuFeeder: TPopupMenu
     Left = 877
-    Top = 200
+    Top = 184
     object ApplyJobDefaultsReload4: TMenuItem
       Caption = 'Apply Job Defaults (Reload)'
       OnClick = ApplyJobDefaultsReload1Click
@@ -1526,7 +1147,7 @@ object Form1: TForm1
   end
   object PopupMenuParts: TPopupMenu
     Left = 432
-    Top = 408
+    Top = 392
     object ApplyJobDefaultsReload1: TMenuItem
       Caption = 'Apply Job Defaults (Reload)'
       OnClick = ApplyJobDefaultsReload1Click
@@ -1564,8 +1185,8 @@ object Form1: TForm1
     end
   end
   object MainMenu1: TMainMenu
-    Left = 496
-    Top = 8
+    Left = 336
+    Top = 392
     object File1: TMenuItem
       Caption = 'Job File'
       object FeederFile1: TMenuItem
